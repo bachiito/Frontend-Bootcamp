@@ -1,7 +1,19 @@
-/* Newsletter form width for large screens */
-
 @media (width >= 768px) {
     .newsletter__form {
         width: 47.5%;
+    }
+}
+
+@media (width < 425px) {
+    .modality,
+    .learn {
+        padding: 1.5rem !important;
+    }
+}
+
+@media (width <= 768px) {
+    .learn__img {
+        width: 80% !important;
+        margin: 0 auto;
     }
 }
