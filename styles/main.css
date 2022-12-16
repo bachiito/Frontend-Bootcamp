@@ -1,3 +1,10 @@
+body::before {
+    display: block;
+    content: "";
+    height: 60px;
+    background-color: rgba(var(--bs-dark-rgb));
+}
+
 @media (width >= 768px) {
     .newsletter__form {
         width: 47.5%;
@@ -20,5 +27,11 @@
     .react__img {
         width: 80% !important;
         margin: 0 auto;
+    }
+}
+
+@media (width <= 992px) {
+    .questions-accordion {
+        width: 95% !important;
     }
 }
