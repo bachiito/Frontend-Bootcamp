@@ -27,6 +27,9 @@
 
         <!-- Personal CSS-->
         <link rel="stylesheet" href="styles/main.css" />
+
+        <!-- Personal Scripts -->
+        <script defer src="scripts/index.js"></script>
     </head>
 
     <body>
@@ -83,7 +86,12 @@
                         consectetur deserunt enim, animi minus reiciendis ipsam
                         nisi totam repellat suscipit!
                     </p>
-                    <button class="btn btn-primary btn-lg">
+                    <button
+                        class="btn btn-primary btn-lg"
+                        type="button"
+                        data-bs-toggle="modal"
+                        data-bs-target="#enrollment-modal"
+                    >
                         Start The Enrollment
                     </button>
                 </div>
@@ -554,5 +562,145 @@
                 </div>
             </div>
         </section>
+
+        <!-- Contact & Map -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row gap-3">
+                    <div class="col-md order-md-1">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121090.4490016333!2d-70.01692050863518!3d18.48019229567481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf89f1107ea5ab%3A0xd6c587b82715c164!2sSanto%20Domingo!5e0!3m2!1sen!2sdo!4v1671223011565!5m2!1sen!2sdo"
+                            width="100%"
+                            height="100%"
+                            style="border: none; border-radius: 10px"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                        ></iframe>
+                    </div>
+                    <div class="col-md">
+                        <h2 class="text-center">Contact Info</h2>
+
+                        <ul class="list-group list-group-flush lead">
+                            <li class="list-group-item">
+                                <span class="fw-bold">Main Location:</span>
+                                50 Main Street Bostos MA
+                            </li>
+                            <li class="list-group-item">
+                                <span class="fw-bold">Enrollment Phone:</span>
+                                (555) 555-5555
+                            </li>
+                            <li class="list-group-item">
+                                <span class="fw-bold">Student Phone:</span>
+                                (333) 333-3333
+                            </li>
+                            <li class="list-group-item">
+                                <span class="fw-bold">Enrollment Email:</span>
+                                (555) enroll@frontendbc.test
+                            </li>
+                            <li class="list-group-item">
+                                <span class="fw-bold">Student Email:</span>
+                                student@frontendbc.test
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="py-4 text-white text-center position-relative bg-dark">
+            <div class="container">
+                <p class="m-0">
+                    &copy; Copyright <span class="footer__year"></span> Frontend
+                    Bootcamp - All rights reserved
+                </p>
+                <a href="#" class="position-absolute bottom-0 end-0 pb-3 pe-3">
+                    <i class="bi bi-arrow-up-circle fs-3"></i>
+                </a>
+            </div>
+        </footer>
+
+        <!-- Modal -->
+        <div
+            class="modal fade"
+            id="enrollment-modal"
+            tabindex="-1"
+            aria-labelledby="enrollment-modal"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <p class="modal-title fs-5">Modal title</p>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="lead">
+                            Fill out this form and we will get back to you
+                        </p>
+                        <form action="/">
+                            <div class="mb-3">
+                                <label for="first-name" class="col-form-label">
+                                    First Name:
+                                </label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="first-name"
+                                />
+                            </div>
+                            <div class="mb-3">
+                                <label for="last-name" class="col-form-label">
+                                    Last Name:
+                                </label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="last-name"
+                                />
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="col-form-label">
+                                    Email:
+                                </label>
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    id="email"
+                                />
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="col-form-label">
+                                    Phone:
+                                </label>
+                                <input
+                                    type="tel"
+                                    class="form-control"
+                                    id="phone"
+                                />
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button
+                            type="button"
+                            class="btn btn-secondary"
+                            data-bs-dismiss="modal"
+                        >
+                            Close
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                            Save changes
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
