@@ -4,15 +4,20 @@
     }
 }
 
-@media (width < 425px) {
-    .modality,
-    .learn {
+@media (width < 600px) {
+    .modality {
         padding: 1.5rem !important;
+    }
+
+    .fundamentals,
+    .react {
+        padding: 2rem !important;
     }
 }
 
 @media (width <= 768px) {
-    .learn__img {
+    .fundamentals__img,
+    .react__img {
         width: 80% !important;
         margin: 0 auto;
     }
