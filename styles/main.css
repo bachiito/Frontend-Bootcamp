@@ -5,23 +5,6 @@ body::before {
     background-color: rgba(var(--bs-dark-rgb));
 }
 
-@media (width >= 768px) {
-    .newsletter__form {
-        width: 47.5%;
-    }
-}
-
-@media (width < 600px) {
-    .modality {
-        padding: 1.5rem !important;
-    }
-
-    .fundamentals,
-    .react {
-        padding: 2rem !important;
-    }
-}
-
 @media (width <= 768px) {
     .fundamentals__img,
     .react__img {
@@ -33,5 +16,11 @@ body::before {
 @media (width <= 992px) {
     .questions-accordion {
         width: 95% !important;
+    }
+}
+
+@media (width >= 768px) {
+    .newsletter__form {
+        width: 47.5%;
     }
 }
