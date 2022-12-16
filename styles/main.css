@@ -1,0 +1,7 @@
+/* Newsletter form width for large screens */
+
+@media (width >= 768px) {
+    .newsletter__form {
+        width: 47.5%;
+    }
+}
